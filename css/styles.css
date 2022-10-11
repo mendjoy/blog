@@ -95,11 +95,40 @@ footer{
 
 .post-box{
     flex: 1 1 0;
-    margin: 0 1%;
     margin-bottom: 20px;
+}
+
+.post-box:nth-child(3){
+    margin:0 1% ;
 }
 
 .post-box img{
     width: 100%;
     
+}
+
+.post-box .post-title{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.post-box .post-title a{
+    color: black;
+    text-decoration: none;
+    transition:  .5s;
+}
+
+.post-box .post-title a:hover {
+    text-decoration: underline;
+}
+
+.tags-container{
+    margin-top: 10px;   
+}
+
+.tags-container a{
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    margin-right: 5px;
 }
