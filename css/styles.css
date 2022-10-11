@@ -29,7 +29,7 @@ main {
     display: flex;
     align-items: centerbo;
     justify-content: center;
-    background-color: #161616;
+    background-color: #1A1423;
     padding: 20px;
     text-transform: uppercase;
     list-style: none;
@@ -45,12 +45,14 @@ main {
     text-decoration: none;
     transition: .5s;
     font-size: 18px;
+    font-weight: bold;
 }
 
 #navbar .nav-link:hover {
     color: #999;
     text-decoration: none;
     transition: .5s;
+    color: goldenrod;
 }
 
 footer{
@@ -58,9 +60,10 @@ footer{
     position: absolute;
     bottom: 0;
     text-align: center;
-    background-color: black;
-    color: white;
-    padding: 50px 0;
+    background-color: #1A1423;
+    color: goldenrod;
+    font-weight: bold;
+    padding: 30px 0;
 }
 
 /*Home*/
@@ -132,3 +135,85 @@ footer{
     display: inline-block;
     margin-right: 5px;
 }
+
+/*POSTS*/
+
+#post-container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "main sidebar";
+    column-gap: 10px; 
+    padding-top: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+
+.content-container{
+    grid-area: main;
+}
+
+.post-content{
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+
+
+.img-container{
+    margin-bottom: 30px;
+}
+
+.img-container img{
+    width: 60%;
+} 
+#main-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#post-description{
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+/*POST ASIDE*/
+
+.nav-container{
+    grid-area: sidebar;
+}
+
+#tags-title, #categories-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #1A1423;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+}
+
+#tag-list, #categories-list{
+    list-style: none;
+}
+
+#tag-list li, #categories-list li{
+    margin-bottom: 10px;
+}
+
+#tag-list a, #categories-list a{
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#tag-list a:hover, #categories-list a:hover{
+    color: gold;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+/*MOBILE*/

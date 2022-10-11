@@ -5,7 +5,6 @@
     'Cuidados',
     'Idosos',
     'Exames',
-    'Vacina'
-    
+    'Vacina' 
   ];
 
